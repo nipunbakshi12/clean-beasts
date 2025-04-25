@@ -1,0 +1,54 @@
+.card {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 800ms;
+    opacity: 0.7;
+    position: relative;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading i {
+    color: orange;
+    text-decoration: underline;
+}
+
+.menu-items .card {
+    margin: 12px auto;
+}
+
+.like-icon {
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    color: white;
+}
+
+.collection-of-cafes{
+    margin-bottom: 30px;
+}
+
+.column_food_column {
+    display: flex;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+    .column_food_column{
+        flex-direction: column;
+    }
+}
